@@ -27,8 +27,9 @@
     background-color: Transparent;
     background-repeat: no-repeat;
     border: none;
-    margin-top: 70%;
+    margin-top: 50%;
     margin-left: 13%;
+    align-content: center;
 }
 .image{
     position: relative;
