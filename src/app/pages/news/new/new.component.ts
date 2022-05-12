@@ -19,4 +19,8 @@ export class NewComponent implements OnInit {
     this.addToFavClick.emit(this.newU);
   }
 
+  onRedirect(storyURL: string): void{
+    window.open(storyURL,"_blank");
+  }
+
 }

@@ -1,4 +1,4 @@
-<div class="new">
+<div class="new" (click)="onRedirect(newU.story_url)">
     <mat-card class="detail">
         <mat-card-title-group>
             <mat-card-subtitle class="lastTimeUpdated">
@@ -6,7 +6,7 @@
             </mat-card-subtitle>
         </mat-card-title-group>
         <mat-card-content class="body">
-            <a href={{newU.story_url}}>{{newU.story_title}}</a>
+            {{newU.story_title}}
         </mat-card-content>
     </mat-card>
     <mat-card class="action" (click)="onClick()">
