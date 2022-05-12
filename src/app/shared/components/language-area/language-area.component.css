@@ -1,0 +1,12 @@
+.languageArea{
+    background-color: #fcfcfc;
+}
+
+.languageArea .letter{
+    font-family: Roboto;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #343434;
+}

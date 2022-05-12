@@ -1,0 +1,28 @@
+<div class="new">
+    <mat-card class="detail">
+        <mat-card-title-group>
+            <mat-card-subtitle class="lastTimeUpdated">
+                <mat-icon svgIcon="clock"></mat-icon>{{newU.lastTimeUpdated}} by {{newU.author}}
+            </mat-card-subtitle>
+        </mat-card-title-group>
+        <mat-card-content class="body">
+            <a href={{newU.story_url}}>{{newU.story_title}}</a>
+        </mat-card-content>
+    </mat-card>
+    <mat-card class="action" (click)="onClick()">
+        <button class="favourite">
+            <div *ngIf="!newU.isFavourite; else favBlock">
+                <img src="assets/white-heart.png"
+                srcset="assets/white-heart@2x.png 2x,assets/white-heart@3x.png 3x"
+                class="image">
+            </div>
+            <ng-template #favBlock>
+                <img src="assets/red-heart.png"
+                srcset="assets/red-heart@2x.png 2x,assets/red-heart@3x.png 3x"
+                class="image">
+            </ng-template>
+        </button>
+    </mat-card>
+</div>
+
+

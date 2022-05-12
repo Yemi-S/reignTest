@@ -1,0 +1,7 @@
+<div class="filterArea">
+  <mat-button-toggle-group class="container" #group="matButtonToggleGroup" [(ngModel)]="favoriteNews" (change)="onValChange(group.value)">
+    <mat-button-toggle class="option" checked value="all">All</mat-button-toggle>
+    <mat-button-toggle class="option" value="faves">My faves</mat-button-toggle>
+  </mat-button-toggle-group>
+</div>
+

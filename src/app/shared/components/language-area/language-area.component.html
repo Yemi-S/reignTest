@@ -1,0 +1,21 @@
+<mat-form-field appearance="fill" class="languageArea">
+    <mat-label class="letter">Select your news</mat-label>
+    <mat-select
+    [(ngModel)]="selectedValue"
+    (selectionChange)="onChange()"
+    >
+      <mat-option class="letter"></mat-option>
+      <mat-option class="letter" value="angular" >
+          <img src="assets/angular-logo.png"
+            srcset="assets/angular-logo@2x.png 2x,assets/angular-logo@3x.png 3x"
+            class="image">Angular</mat-option>
+      <mat-option class="letter" value="reactjs" >
+        <img src="assets/reacts-logo.png"
+        srcset="assets/reacts-logo@2x.png 2x,assets/reacts-logo@3x.png 3x"
+        class="image">Reacts</mat-option>
+      <mat-option class="letter" value="vuejs" >
+          <img src="assets/vuejs-logo.png"
+        srcset="assets/vuejs-logo@2x.png 2x,assets/vuejs-logo@3x.png 3x"
+        class="image">Vuejs</mat-option>
+    </mat-select>
+  </mat-form-field>

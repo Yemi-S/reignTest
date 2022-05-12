@@ -1,0 +1,15 @@
+<footer>
+    <mat-button-toggle-group class="container" #group="matButtonToggleGroup" [(ngModel)]="pageSelected" (change)="onPageChange(group.value)">
+        <mat-button-toggle class="option" [value]="start">{{pages[0]}}</mat-button-toggle>
+        <mat-button-toggle class="option" checked [value]="pages[1]">{{pages[1]}}</mat-button-toggle>
+        <mat-button-toggle class="option" [value]="pages[2]">{{pages[2]}}</mat-button-toggle>
+        <mat-button-toggle class="option" [value]="pages[3]">{{pages[3]}}</mat-button-toggle>
+        <mat-button-toggle class="option" [value]="pages[4]">{{pages[4]}}</mat-button-toggle>
+        <mat-button-toggle class="option" [value]="pages[5]">{{pages[5]}}</mat-button-toggle>
+        <mat-button-toggle class="option" [value]="pages[6]">{{pages[6]}}</mat-button-toggle>
+        <mat-button-toggle class="option" [value]="pages[7]">{{pages[7]}}</mat-button-toggle>
+        <mat-button-toggle class="option" [value]="pages[8]">{{pages[8]}}</mat-button-toggle>
+        <mat-button-toggle class="option" [value]="pages[9]">{{pages[9]}}</mat-button-toggle>
+        <mat-button-toggle class="option" [value]="end">{{pages[10]}}</mat-button-toggle>
+    </mat-button-toggle-group>
+</footer>

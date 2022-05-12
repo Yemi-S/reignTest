@@ -1,0 +1,40 @@
+
+.new{
+    display: flex;
+    flex-direction: row;
+    opacity: 0.8;
+    border-radius: 6px;
+    border: solid 1px #979797;
+    background-color: #fff;
+    margin-bottom: 2rem;
+    height: 7rem;
+    margin-right: 2rem;
+}
+.new .detail{
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    width: 90%;
+}
+.new .action{
+    background-color: #6060602a;
+    z-index: 2;
+    position: relative;
+    border-radius: 6px;
+    width: 10%;
+}
+.new .action .favourite{
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    margin-top: 70%;
+    margin-left: 13%;
+}
+.image{
+    position: relative;
+    z-index: 1;
+}
+
+.new:hover{
+    opacity: 0.50;
+}

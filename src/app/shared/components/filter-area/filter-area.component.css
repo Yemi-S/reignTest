@@ -1,0 +1,32 @@
+.filterArea{
+    height: 30%;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    margin-left: 43%;
+    margin-right: 30%;
+}
+
+.container{
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+}
+.container .option{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    text-align: center;
+}
+
+.container .option:hover{
+    border-radius: 2px;
+    border: solid 1px #1797ff;
+}
+
+mat-button-toggle:hover {
+    color: #1797ff;;
+}

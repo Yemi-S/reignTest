@@ -1,0 +1,51 @@
+<section class="news">
+    <app-filter-area
+        (doFilter)="showFavs($event)"
+    >
+    </app-filter-area>
+    <app-language-area
+        (selectLanguage)="makeQuery($event)"
+    >
+    </app-language-area>
+    <table class="newsSection" *ngIf="!isFilter; else favTable">
+        <tr class = "content">
+            <td class="section">
+                <app-new
+                    (addToFavClick)="addToFav($event)"
+                    [newU] ="newU" 
+                    *ngFor="let newU of newsSectionA"
+                ></app-new>
+            </td>
+            <td class="section">
+                <app-new
+                    (addToFavClick)="addToFav($event)"
+                    [newU] ="newU" 
+                    *ngFor="let newU of newsSectionB"
+                ></app-new>
+            </td>
+          </tr>
+    </table>
+    <ng-template #favTable>
+        <table class="favsSection">
+            <tr class = "content">
+                <td class="section">
+                    <app-new
+                        (addToFavClick)="addToFav($event)"
+                        [newU] ="newU" 
+                        *ngFor="let newU of favNewsSectionA"
+                    ></app-new>
+                </td>
+                <td class="section">
+                    <app-new
+                        (addToFavClick)="addToFav($event)"
+                        [newU] ="newU" 
+                        *ngFor="let newU of favNewsSectionB"
+                    ></app-new>
+                </td>
+            </tr>
+        </table>
+    </ng-template>
+    <app-paginator
+        (changePage)="makeQueryByPage($event)"
+    ></app-paginator>
+</section>    
